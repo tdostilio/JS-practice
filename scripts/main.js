@@ -196,29 +196,76 @@
 
 // LONG-LONG-VOWELS
 
-vowelsDictionary = {
-    'aa': 'aaaa',
-    'ee': 'eeee',
-    'oo': 'oooo',
-    'ii': 'iiii',
-    'uu': 'uuuu'
-}
+// vowelsDictionary = {
+//     'aa': 'aaaa',
+//     'ee': 'eeee',
+//     'oo': 'oooo',
+//     'ii': 'iiii',
+//     'uu': 'uuuu'
+// }
 
-enlongatedWord = [];
+// enlongatedWord = [];
 
-function elongation(string) {
-    for (var i=0;i<string.length;i++) {
-        string = string.toLowerCase();
-        var twoLetters = string[i]+string[i-1];
-        if (twoLetters in vowelsDictionary) {
-            enlongatedWord.push(vowelsDictionary[twoLetters])
-        } else {
-            enlongatedWord.push(string[i]);
+// function elongation(string) {
+//     for (var i=0;i<string.length;i++) {
+//         string = string.toLowerCase();
+//         var twoLetters = string[i]+string[i-1];
+//         if (twoLetters in vowelsDictionary) {
+//             enlongatedWord.push(vowelsDictionary[twoLetters])
+//         } else {
+//             enlongatedWord.push(string[i]);
+//         }
+//     }
+//     enlongatedWord = enlongatedWord.join('');
+// }
+
+// elongation('aardvark');
+// console.log(enlongatedWord);
+
+// Matrix multiplication
+var matrix1 = [[2, -2], [5, 3]]
+var matrix2 = [[-1, 4], [7, -6]]
+var result = [[0,0],[0,0]]
+
+// // Multiply code for debugging
+// function matrixMultiply(matrix1,matrix2) {
+//     for (var i=0; i<matrix1.length;i++) {
+//         for (var j=0; j<matrix2[i].length;j++) {
+//             for (var k=0; k<matrix2.length;k++) {
+//                 console.log(matrix1[i][k])
+//                 console.log(matrix2[k][j])
+//                 result[i][j] += (matrix1[i][k] * matrix2[k][j])
+//                 console.log(result[i][j]);
+//             }
+//         }
+//     }
+// }
+
+console.log(matrixMultiply(matrix1,matrix2));
+console.log(result);
+
+// Minified matrix multiply code
+
+function matrixMultiply(matrix1,matrix2) {
+    for (var i=0; i<matrix1.length;i++) {
+        for (var j=0; j<matrix2[i].length;j++) {
+            for (var k=0; k<matrix2.length;k++) {
+                result[i][j] += (matrix1[i][k] * matrix2[k][j])
+            }
         }
     }
-    enlongatedWord = enlongatedWord.join('');
 }
 
-elongation('aardvark');
-console.log(enlongatedWord);
 
+
+
+
+
+// for i in range(len(matrix1)):
+//     for j in range(len(matrix2[i])):
+//         for k in range(len(matrix2)):
+//             print matrix1[i][k]
+//             print matrix2[k][j]
+//             result[i][j] += matrix1[i][k] * matrix2[k][j] 
+
+// print result
