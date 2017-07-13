@@ -195,3 +195,30 @@
 // console.log(leetArray);
 
 // LONG-LONG-VOWELS
+
+vowelsDictionary = {
+    'aa': 'aaaa',
+    'ee': 'eeee',
+    'oo': 'oooo',
+    'ii': 'iiii',
+    'uu': 'uuuu'
+}
+
+enlongatedWord = [];
+
+function elongation(string) {
+    for (var i=0;i<string.length;i++) {
+        string = string.toLowerCase();
+        var twoLetters = string[i]+string[i-1];
+        if (twoLetters in vowelsDictionary) {
+            enlongatedWord.push(vowelsDictionary[twoLetters])
+        } else {
+            enlongatedWord.push(string[i]);
+        }
+    }
+    enlongatedWord = enlongatedWord.join('');
+}
+
+elongation('aardvark');
+console.log(enlongatedWord);
+
