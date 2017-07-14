@@ -346,4 +346,121 @@ var result = [[0,0],[0,0]]
 // console.log(topTwo(letterHistogram('hello')));
 
 
-// 
+// FUNCTION EXERCISES
+
+var sample = [1, -2, 3, -4, 5, -6]
+var squares = sample.map(squareNumbers);
+var positives = []
+var negatives = []
+var cities = [
+  { name: 'Los Angeles', temperature: 60.0},
+  { name: 'Atlanta', temperature: 52.0 },
+  { name: 'Detroit', temperature: 48.0 },
+  { name: 'New York', temperature: 80.0 }
+];
+var colderCities = [];
+var cityNames = [];
+var people = [
+  'Dom',
+  'Lyn',
+  'Kirk',
+  'Autumn',
+  'Trista',
+  'Jesslyn',
+  'Kevin',
+  'John',
+  'Eli',
+  'Juan',
+  'Robert',
+  'Keyur',
+  'Jason',
+  'Che',
+  'Ben'
+];
+
+sample.forEach(function (n) {
+    if (n >= 0) {
+        positives.push(n);
+    } return positives;
+});
+// console.log(positives);
+
+sample.forEach(function (n) {
+    if (n <= 0) {
+        negatives.push(n);
+    } return negatives;
+});
+// console.log(negatives);
+
+function squareNumbers(n) {
+    return n * n
+}
+
+// Cities 1
+cities.forEach(function (city) {
+    if (city.temperature <= 70) {
+        colderCities.push(city.name);
+    } return colderCities;
+});
+// console.log(colderCities);
+
+// Cities 2
+cities.forEach(function(city) {
+    cityNames.push(city.name);
+    return cityNames;
+});
+// console.log(cityNames);
+
+people.forEach(function(person) {
+    console.log("Good job, " + person + "!");
+})
+
+
+function call3Times() {
+  fun();
+  fun();
+  fun();
+}
+// call3Times();
+
+times = 3;
+
+// function fun(string) {
+//     console.log(string);
+// };
+
+
+function callNtimes(times, fun) {
+    for (var i=0;i<times;i++) {
+        console.log(fun);
+    }
+};
+
+function fun() {
+    return 'Hello World';
+}
+
+callNtimes(5, fun());
+
+// function product(array) {
+//    return array.reduce(function(product, value) {
+//         return product * value;
+//     }, 1);
+     
+// }
+
+// function product(array) {
+//    return array.reduce((product, value) => {
+//         return product * value;
+//     }, 1);
+     
+// }
+
+// console.log(product([3,4,5]));
+
+var products = [
+  { name: 'Basketball', price: 12.00 },
+  { name: 'Tennis Racquet', price: 66.00 },
+  { name: 'Tennis Balls', price: 9.00 },
+  { name: 'Tennis Balls', price: 9.00 }
+];
