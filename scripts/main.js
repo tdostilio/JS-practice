@@ -257,52 +257,93 @@ var result = [[0,0],[0,0]]
 // console.log(result);
 
 
-// PhoneBook Exercises
-var phonebookDict = {
-  Alice: '703-493-1834',
-  Bob: '857-384-1234',
-  Elizabeth: '484-584-2923'
-}
+// // PhoneBook Exercises
+// var phonebookDict = {
+//   Alice: '703-493-1834',
+//   Bob: '857-384-1234',
+//   Elizabeth: '484-584-2923'
+// }
 
-var personName = 'Elizabeth';
+// var personName = 'Elizabeth';
 
-function printNumber(name) {
-    console.log(phonebookDict[name]);
-}
+// function printNumber(name) {
+//     console.log(phonebookDict[name]);
+// }
 
-function addEntry(name, number) {
-    phonebookDict[name] = number;
-    return phonebookDict;
-}
+// function addEntry(name, number) {
+//     phonebookDict[name] = number;
+//     return phonebookDict;
+// }
 
-function deleteEntry(name) {
-    delete phonebookDict[name];
-    return phonebookDict;
-}
+// function deleteEntry(name) {
+//     delete phonebookDict[name];
+//     return phonebookDict;
+// }
 
-function changeNumber(name, number) {
-    phonebookDict[name] = number;
-    return phonebookDict;
-}
+// function changeNumber(name, number) {
+//     phonebookDict[name] = number;
+//     return phonebookDict;
+// }
 
-function printEntry(name) {
-    console.log(name + ': ' +phonebookDict[name]);
+// function printEntry(name) {
+//     console.log(name + ': ' +phonebookDict[name]);
 
-}
+// }
 
-function printAll(dictionary) {
-    for (name in dictionary) {
-        console.log(name + ': ' + dictionary[name]);
-    }
-}
+// function printAll(dictionary) {
+//     for (name in dictionary) {
+//         console.log(name + ': ' + dictionary[name]);
+//     }
+// }
+
+// printNumber('Alice');
+// addEntry('Kareem', '938-489-1234');
+// deleteEntry('Alice');
+// changeNumber('Bob', "968-345-2345");
+// printEntry(personName);
+// printAll(phonebookDict);
+
+// // LETTER HISTOGRAM 
+
+// function letterHistogram(string) {
+//     var freq ={}
+//     for (var i=0; i<string.length; i++) {
+//         var character = string.charAt(i);
+//         if (freq[character]) {
+//             freq[character]++;
+//         } else {
+//             freq[character] = 1;
+//         }
+//     }
+// }
+
+// function wordHistogram(string) {
+//     var wordArray = string.split(' ');
+//     var freq = {};
+//     for (var i=0; i<wordArray.length; i++) {
+//         var word = wordArray[i];
+//         if (freq[word]) {
+//             freq[word]++;
+//         } else {
+//             freq[word] = 1;
+//         }
+//     }
+//     return freq;
+// }
+
+// function topTwo(dictionary) {
+//     var sortedDict = [];
+//     for (var key in dictionary) {
+//         sortedDict.push([key, dictionary[key]]);
+//     }
+//     console.log(sortedDict);
+//     sortedDict = sortedDict.sort();
+//     return sortedDict.slice(0,1);
+// }
+
+// console.log(letterHistogram("hello"));
+// console.log(wordHistogram('to be or not to be'));
+// console.log(topTwo(letterHistogram('hello')));
 
 
-
-printNumber('Alice');
-addEntry('Kareem', '938-489-1234');
-deleteEntry('Alice');
-changeNumber('Bob', "968-345-2345");
-printEntry(personName);
-printAll(phonebookDict);
-
-
+// 
