@@ -241,31 +241,68 @@ var result = [[0,0],[0,0]]
 //     }
 // }
 
-console.log(matrixMultiply(matrix1,matrix2));
-console.log(result);
-
 // Minified matrix multiply code
 
-function matrixMultiply(matrix1,matrix2) {
-    for (var i=0; i<matrix1.length;i++) {
-        for (var j=0; j<matrix2[i].length;j++) {
-            for (var k=0; k<matrix2.length;k++) {
-                result[i][j] += (matrix1[i][k] * matrix2[k][j])
-            }
-        }
+// function matrixMultiply(matrix1,matrix2) {
+//     for (var i=0; i<matrix1.length;i++) {
+//         for (var j=0; j<matrix2[i].length;j++) {
+//             for (var k=0; k<matrix2.length;k++) {
+//                 result[i][j] += (matrix1[i][k] * matrix2[k][j])
+//             }
+//         }
+//     }
+// }
+
+// console.log(matrixMultiply(matrix1,matrix2));
+// console.log(result);
+
+
+// PhoneBook Exercises
+var phonebookDict = {
+  Alice: '703-493-1834',
+  Bob: '857-384-1234',
+  Elizabeth: '484-584-2923'
+}
+
+var personName = 'Elizabeth';
+
+function printNumber(name) {
+    console.log(phonebookDict[name]);
+}
+
+function addEntry(name, number) {
+    phonebookDict[name] = number;
+    return phonebookDict;
+}
+
+function deleteEntry(name) {
+    delete phonebookDict[name];
+    return phonebookDict;
+}
+
+function changeNumber(name, number) {
+    phonebookDict[name] = number;
+    return phonebookDict;
+}
+
+function printEntry(name) {
+    console.log(name + ': ' +phonebookDict[name]);
+
+}
+
+function printAll(dictionary) {
+    for (name in dictionary) {
+        console.log(name + ': ' + dictionary[name]);
     }
 }
 
 
 
+printNumber('Alice');
+addEntry('Kareem', '938-489-1234');
+deleteEntry('Alice');
+changeNumber('Bob', "968-345-2345");
+printEntry(personName);
+printAll(phonebookDict);
 
 
-
-// for i in range(len(matrix1)):
-//     for j in range(len(matrix2[i])):
-//         for k in range(len(matrix2)):
-//             print matrix1[i][k]
-//             print matrix2[k][j]
-//             result[i][j] += matrix1[i][k] * matrix2[k][j] 
-
-// print result
