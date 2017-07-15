@@ -346,108 +346,108 @@ var result = [[0,0],[0,0]]
 // console.log(topTwo(letterHistogram('hello')));
 
 
-// FUNCTION EXERCISES
+// // FUNCTION EXERCISES
 
-var sample = [1, -2, 3, -4, 5, -6]
-var squares = sample.map(squareNumbers);
-var positives = []
-var negatives = []
-var cities = [
-  { name: 'Los Angeles', temperature: 60.0},
-  { name: 'Atlanta', temperature: 52.0 },
-  { name: 'Detroit', temperature: 48.0 },
-  { name: 'New York', temperature: 80.0 }
-];
-var colderCities = [];
-var cityNames = [];
-var people = [
-  'Dom',
-  'Lyn',
-  'Kirk',
-  'Autumn',
-  'Trista',
-  'Jesslyn',
-  'Kevin',
-  'John',
-  'Eli',
-  'Juan',
-  'Robert',
-  'Keyur',
-  'Jason',
-  'Che',
-  'Ben'
-];
+// var sample = [1, -2, 3, -4, 5, -6]
+// var squares = sample.map(squareNumbers);
+// var positives = []
+// var negatives = []
+// var cities = [
+//   { name: 'Los Angeles', temperature: 60.0},
+//   { name: 'Atlanta', temperature: 52.0 },
+//   { name: 'Detroit', temperature: 48.0 },
+//   { name: 'New York', temperature: 80.0 }
+// ];
+// var colderCities = [];
+// var cityNames = [];
+// var people = [
+//   'Dom',
+//   'Lyn',
+//   'Kirk',
+//   'Autumn',
+//   'Trista',
+//   'Jesslyn',
+//   'Kevin',
+//   'John',
+//   'Eli',
+//   'Juan',
+//   'Robert',
+//   'Keyur',
+//   'Jason',
+//   'Che',
+//   'Ben'
+// ];
 
-sample.forEach(function (n) {
-    if (n >= 0) {
-        positives.push(n);
-    } return positives;
-});
-// console.log(positives);
+// sample.forEach(function (n) {
+//     if (n >= 0) {
+//         positives.push(n);
+//     } return positives;
+// });
+// // console.log(positives);
 
-sample.forEach(function (n) {
-    if (n <= 0) {
-        negatives.push(n);
-    } return negatives;
-});
-// console.log(negatives);
+// sample.forEach(function (n) {
+//     if (n <= 0) {
+//         negatives.push(n);
+//     } return negatives;
+// });
+// // console.log(negatives);
 
-function squareNumbers(n) {
-    return n * n
-}
+// function squareNumbers(n) {
+//     return n * n
+// }
 
-// Cities 1
-cities.forEach(function (city) {
-    if (city.temperature <= 70) {
-        colderCities.push(city.name);
-    } return colderCities;
-});
-// console.log(colderCities);
+// // Cities 1
+// cities.forEach(function (city) {
+//     if (city.temperature <= 70) {
+//         colderCities.push(city.name);
+//     } return colderCities;
+// });
+// // console.log(colderCities);
 
-// Cities 2
-cities.forEach(function(city) {
-    cityNames.push(city.name);
-    return cityNames;
-});
-// console.log(cityNames);
+// // Cities 2
+// cities.forEach(function(city) {
+//     cityNames.push(city.name);
+//     return cityNames;
+// });
+// // console.log(cityNames);
 
-people.forEach(function(person) {
-    console.log("Good job, " + person + "!");
-})
+// people.forEach(function(person) {
+//     console.log("Good job, " + person + "!");
+// })
 
 
-function call3Times() {
-  fun();
-  fun();
-  fun();
-}
-// call3Times();
+// function call3Times() {
+//   fun();
+//   fun();
+//   fun();
+// }
+// // call3Times();
 
-times = 3;
+// times = 3;
 
 // function fun(string) {
 //     console.log(string);
 // };
 
 
-function callNtimes(times, fun) {
-    for (var i=0;i<times;i++) {
-        console.log(fun);
-    }
-};
+// function callNtimes(times, fun) {
+//     for (var i=0;i<times;i++) {
+//         console.log(fun);
+//     }
+// };
 
-function fun() {
-    return 'Hello World';
-}
-
-callNtimes(5, fun());
-
-// function product(array) {
-//    return array.reduce(function(product, value) {
-//         return product * value;
-//     }, 1);
-     
+// function fun() {
+//     return 'Hello World';
 // }
+
+// callNtimes(5, fun());
+
+function product(array) {
+   return array.reduce(function(product, value) {
+        return product * value;
+    }, 1);
+     
+}
 
 // function product(array) {
 //    return array.reduce((product, value) => {
@@ -458,9 +458,91 @@ callNtimes(5, fun());
 
 // console.log(product([3,4,5]));
 
-var products = [
-  { name: 'Basketball', price: 12.00 },
-  { name: 'Tennis Racquet', price: 66.00 },
-  { name: 'Tennis Balls', price: 9.00 },
-  { name: 'Tennis Balls', price: 9.00 }
-];
+// var products = [
+//   { name: 'Basketball', price: 12.00 },
+//   { name: 'Tennis Racquet', price: 66.00 },
+//   { name: 'Tennis Balls', price: 9.00 },
+//   { name: 'Tennis Balls', price: 9.00 }
+// ];
+
+// var prices = []
+
+// products.forEach(function (element) {
+//     prices.push(element['price'])
+// });
+
+// console.log(prices);
+
+// function totalPrice(array) {
+//     return array.reduce(function(sum, value) {
+//         return sum + value;
+//     }, 0);
+// }
+
+// console.log(totalPrice(prices));
+
+// MY CRAP CODE BELOW
+// addedSpaces = []
+// function strCombine(strs, sep) {
+//     strs.forEach(function (element) {
+//         addedSpaces.push(element + sep);
+//     })};
+
+
+// function strJoin(addedSpaces, sep) {
+//     return addedSpaces.reduce(function (strs,sep) {
+//         return strs + sep;
+//     }, );
+// };
+
+// strCombine(['hello', 'and', 'goodbye'], " ");
+
+// function strJoin(str, space){
+//    return str.reduce(function(string, value) {
+//        return string + space + value
+//    })
+// }
+// console.log(strJoin(['Hello', 'and', 'goodbye'], ' '));
+
+// firstLetters = [];
+// function acronym(array) {
+//     array.forEach(function(element) {
+//         firstLetters.push(element[0]);
+//     });
+//     return strJoin(firstLetters, "").toUpperCase()};
+
+
+// console.log(acronym(['very', 'important', 'person']));
+
+
+
+// function strMultiply(string, times) {
+//   var arr = [];
+//   for (var i = 0; i < times; i++) {
+//     arr.push(string);
+//   }
+//   return strJoin(arr, "")
+// }
+
+// console.log(strMultiply('abc', 5));
+
+
+
+// CREATE A BOX 
+function range(min, max) {
+  var arr = [];
+  for (var i = min; i < max; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
+
+function boxGenerator(width, height) {
+    var character = "*"
+    return range(0,2).forEach(function(element) {
+        return character.repeat(width);
+    }); 
+} 
+
+
+console.log(boxGenerator(2, 2));
