@@ -538,11 +538,12 @@ function range(min, max) {
 }
 
 function boxGenerator(width, height) {
-    var character = "*"
-    return range(0,2).forEach(function(element) {
-        return character.repeat(width);
+    var box = ""
+    range(0,height).forEach(function(element) {
+        box += "*".repeat(width)+ "\n";
     }); 
+    return box ;
 } 
 
 
-console.log(boxGenerator(2, 2));
+console.log(boxGenerator(4, 4));
