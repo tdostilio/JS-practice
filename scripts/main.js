@@ -222,10 +222,10 @@
 // elongation('aardvark');
 // console.log(enlongatedWord);
 
-// Matrix multiplication
-var matrix1 = [[2, -2], [5, 3]]
-var matrix2 = [[-1, 4], [7, -6]]
-var result = [[0,0],[0,0]]
+// // Matrix multiplication
+// var matrix1 = [[2, -2], [5, 3]]
+// var matrix2 = [[-1, 4], [7, -6]]
+// var result = [[0,0],[0,0]]
 
 // // Multiply code for debugging
 // function matrixMultiply(matrix1,matrix2) {
@@ -442,12 +442,12 @@ var result = [[0,0],[0,0]]
 
 // callNtimes(5, fun());
 
-function product(array) {
-   return array.reduce(function(product, value) {
-        return product * value;
-    }, 1);
+// function product(array) {
+//    return array.reduce(function(product, value) {
+//         return product * value;
+//     }, 1);
      
-}
+// }
 
 // function product(array) {
 //    return array.reduce((product, value) => {
@@ -548,15 +548,64 @@ function product(array) {
 
 // console.log(boxGenerator(4, 4));
 
-// SORT AN ARRAY
+// // SORT AN ARRAY
 
-var people = ["Deb", "Fiona", "Carl", "Lip", "Ian"];
+// var people = ["Deb", "Fiona", "Carl", "Lip", "Ian"];
 
-function sortArray(array) {
-    return array.sort();
-} 
+// function sortArray(array) {
+//     return array.sort();
+// } 
 
-console.log(sortArray(people));
+// console.log(sortArray(people));
 
 
-// SORT BY LENGTH
+// // SORT BY LENGTH
+
+// people.sort(function(a, b){
+//         return b.length - a.length;
+// });
+
+// console.log(people);
+
+// Sort by value in object
+
+var products = [
+  { name: 'Basketball', price: 12.00 },
+  { name: 'Tennis Racquet', price: 66.00 },
+  { name: 'Tennis Balls', price: 9.00 },
+  { name: 'Tennis Balls', price: 9.00 }
+];
+
+// var prices = [];
+
+// function by(propName) {
+//   return function (a, b) {
+//     // Another way to write a comparator.
+//     return a[propName] > b[propName];
+//   }
+// }
+// console.log(products.sort(by('price')));
+
+
+// function by(propName) {
+//     return function (a, b) {
+//         return a[propName] > b[propName];
+//     }
+// }
+
+
+// console.log(products.sort(by('price')));
+
+
+// products.forEach(function (element) {
+//     prices.push(element['price'])
+// });
+
+
+function makePrinter(formatterfn) {
+    return function(str) {
+        console.log(formatterfn(str));
+    }
+}
+
+makePrinter("hello");
