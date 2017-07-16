@@ -529,21 +529,34 @@ function product(array) {
 
 
 // CREATE A BOX 
-function range(min, max) {
-  var arr = [];
-  for (var i = min; i < max; i++) {
-    arr.push(i);
-  }
-  return arr;
-}
+// function range(min, max) {
+//   var arr = [];
+//   for (var i = min; i < max; i++) {
+//     arr.push(i);
+//   }
+//   return arr;
+// }
 
-function boxGenerator(width, height) {
-    var box = ""
-    range(0,height).forEach(function(element) {
-        box += "*".repeat(width)+ "\n";
-    }); 
-    return box ;
+// function boxGenerator(width, height) {
+//     var box = ""
+//     range(0,height).forEach(function(element) {
+//         box += "*".repeat(width)+ "\n";
+//     }); 
+//     return box ;
+// } 
+
+
+// console.log(boxGenerator(4, 4));
+
+// SORT AN ARRAY
+
+var people = ["Deb", "Fiona", "Carl", "Lip", "Ian"];
+
+function sortArray(array) {
+    return array.sort();
 } 
 
+console.log(sortArray(people));
 
-console.log(boxGenerator(4, 4));
+
+// SORT BY LENGTH
