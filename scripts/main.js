@@ -825,41 +825,50 @@ var products = [
 
 // console.log(cityNames(cities));     
 
-var people = [
-  'Dom',
-  'Lyn',
-  'Kirk',
-  'Autumn',
-  'Trista',
-  'Jesslyn',
-  'Kevin',
-  'John',
-  'Eli',
-  'Juan',
-  'Robert',
-  'Keyur',
-  'Jason',
-  'Che',
-  'Ben'
-];
+// var people = [
+//   'Dom',
+//   'Lyn',
+//   'Kirk',
+//   'Autumn',
+//   'Trista',
+//   'Jesslyn',
+//   'Kevin',
+//   'John',
+//   'Eli',
+//   'Juan',
+//   'Robert',
+//   'Keyur',
+//   'Jason',
+//   'Che',
+//   'Ben'
+// ];
 
-function givePraise(pplArray) {
-    return pplArray.map(function(person) {
-        return 'Good job, ' + person + "!";
+// function givePraise(pplArray) {
+//     return pplArray.map(function(person) {
+//         return 'Good job, ' + person + "!";
+//     })
+// }
+
+// console.log(givePraise(people));
+
+
+// function call3Times(fun) {
+//   fun();
+//   fun();
+//   fun();
+// }
+
+// function runescape() {
+//    console.log("hello world")
+// }
+
+// call3Times(runescape);
+
+function product(array) {
+    return array.map(function (element) {
+        return element * element;
     })
 }
 
-console.log(givePraise(people));
+console.log(product([3, 4, 5]));
 
-
-function call3Times(fun) {
-  fun();
-  fun();
-  fun();
-}
-
-function runescape() {
-   console.log("hello world")
-}
-
-call3Times(runescape);
