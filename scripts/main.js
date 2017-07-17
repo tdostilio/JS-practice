@@ -850,3 +850,16 @@ function givePraise(pplArray) {
 }
 
 console.log(givePraise(people));
+
+
+function call3Times(fun) {
+  fun();
+  fun();
+  fun();
+}
+
+function runescape() {
+   console.log("hello world")
+}
+
+call3Times(runescape);
