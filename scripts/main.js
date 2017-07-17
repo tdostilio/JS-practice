@@ -864,11 +864,33 @@ var products = [
 
 // call3Times(runescape);
 
-function product(array) {
-    return array.map(function (element) {
-        return element * element;
-    })
-}
+// function product(array) {
+//     return array.map(function (element) {
+//         return element * element;
+//     })
+// }
 
-console.log(product([3, 4, 5]));
+// console.log(product([3, 4, 5]));
 
+// Total price
+
+// var products = [
+//   { name: 'Basketball', price: 12.00 },
+//   { name: 'Tennis Racquet', price: 66.00 },
+//   { name: 'Tennis Balls', price: 9.00 },
+//   { name: 'Tennis Balls', price: 9.00 }
+// ];
+
+
+// function pricesArray(array) {
+//     return array.map(function (element) {
+//         return element.price;
+//     })
+// }
+// function total(array) {
+//     return pricesArray(array).reduce(function (tally, item) {
+//         return tally += item;
+//     })
+// };
+
+// console.log(total(products));
