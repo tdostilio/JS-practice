@@ -902,4 +902,14 @@ function strJoin(strs, sep) {
     },"")
 }
 
-console.log(strJoin(["hi", "howya", "durn"], " "));
+// console.log(strJoin(["hi", "howya", "durn"], " "));
+
+
+function acronym(array) {
+    acronymVariable = array.map(function (element) {
+        return element[0];
+    })
+    return strJoin(acronymVariable, "");
+}
+
+console.log(acronym(["very", "important", "person"]))
