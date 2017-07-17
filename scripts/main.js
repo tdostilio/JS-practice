@@ -905,11 +905,29 @@ function strJoin(strs, sep) {
 // console.log(strJoin(["hi", "howya", "durn"], " "));
 
 
-function acronym(array) {
-    acronymVariable = array.map(function (element) {
-        return element[0];
-    })
-    return strJoin(acronymVariable, "");
+// function acronym(array) {
+//     acronymVariable = array.map(function (element) {
+//         return element[0];
+//     })
+//     return strJoin(acronymVariable, "");
+// }
+
+// console.log(acronym(["very", "important", "person"]))
+
+// STR MULTIPLY 
+function range(min, max) {
+  var arr = [];
+  for (var i = min; i < max; i++) {
+    arr.push(i);
+  }
+  return arr;
 }
 
-console.log(acronym(["very", "important", "person"]))
+function strMultiply(str, times) {
+    var numArray = range(0,times);
+    return strJoin(numArray.map(function (element) {
+        return str;
+    }),"");
+}
+
+console.log(strMultiply('abc', 5));
