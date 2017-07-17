@@ -894,3 +894,12 @@ var products = [
 // };
 
 // console.log(total(products));
+
+
+function strJoin(strs, sep) {
+    return strs.reduce(function (runningTotal, current) {
+        return runningTotal += current + sep 
+    },"")
+}
+
+console.log(strJoin(["hi", "howya", "durn"], " "));
