@@ -896,11 +896,11 @@ var products = [
 // console.log(total(products));
 
 
-function strJoin(strs, sep) {
-    return strs.reduce(function (runningTotal, current) {
-        return runningTotal += current + sep 
-    },"")
-}
+// function strJoin(strs, sep) {
+//     return strs.reduce(function (runningTotal, current) {
+//         return runningTotal += current + sep 
+//     },"")
+// }
 
 // console.log(strJoin(["hi", "howya", "durn"], " "));
 
@@ -915,6 +915,25 @@ function strJoin(strs, sep) {
 // console.log(acronym(["very", "important", "person"]))
 
 // STR MULTIPLY 
+// function range(min, max) {
+//   var arr = [];
+//   for (var i = min; i < max; i++) {
+//     arr.push(i);
+//   }
+//   return arr;
+// }
+
+// function strMultiply(str, times) {
+//     var numArray = range(0,times);
+//     return strJoin(numArray.map(function (element) {
+//         return str;
+//     }),"");
+// }
+
+// console.log(strMultiply('abc', 5));
+
+// Box Generator 
+
 function range(min, max) {
   var arr = [];
   for (var i = min; i < max; i++) {
@@ -923,11 +942,11 @@ function range(min, max) {
   return arr;
 }
 
-function strMultiply(str, times) {
-    var numArray = range(0,times);
-    return strJoin(numArray.map(function (element) {
-        return str;
-    }),"");
+function box(width, height) {
+    var numArray = range(0, height);
+    return numArray.map(function (element) {
+        return "*".repeat(width)+"\n";
+    })
 }
 
-console.log(strMultiply('abc', 5));
+console.log(box(15,15));
