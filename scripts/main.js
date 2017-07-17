@@ -801,26 +801,52 @@ var products = [
 
 // console.log(squareTheNumbers([1,2,3]));
 
-var cities = [
-  { name: 'Los Angeles', temperature: 60.0},
-  { name: 'Atlanta', temperature: 52.0 },
-  { name: 'Detroit', temperature: 48.0 },
-  { name: 'New York', temperature: 80.0 }
+// var cities = [
+//   { name: 'Los Angeles', temperature: 60.0},
+//   { name: 'Atlanta', temperature: 52.0 },
+//   { name: 'Detroit', temperature: 48.0 },
+//   { name: 'New York', temperature: 80.0 }
+// ];
+
+
+// function coolCities(cityArray) {
+//     return cityArray.filter(function(city) {
+//         return city.temperature < 70;
+//     });
+// } 
+
+// console.log(coolCities(cities));
+
+// function cityNames(cityArray) {
+//     return cityArray.map(function(city) {
+//         return city['name'];
+//     });
+// }
+
+// console.log(cityNames(cities));     
+
+var people = [
+  'Dom',
+  'Lyn',
+  'Kirk',
+  'Autumn',
+  'Trista',
+  'Jesslyn',
+  'Kevin',
+  'John',
+  'Eli',
+  'Juan',
+  'Robert',
+  'Keyur',
+  'Jason',
+  'Che',
+  'Ben'
 ];
 
-
-function coolCities(cityArray) {
-    return cityArray.filter(function(city) {
-        return city.temperature < 70;
-    });
-} 
-
-console.log(coolCities(cities));
-
-function cityNames(cityArray) {
-    return cityArray.map(function(city) {
-        return city['name'];
-    });
+function givePraise(pplArray) {
+    return pplArray.map(function(person) {
+        return 'Good job, ' + person + "!";
+    })
 }
 
-console.log(cityNames(cities));     
+console.log(givePraise(people));
